@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@99.5,800&display=swap');
+
+body{
+    background-color:#D9D9D9;
+}
+.navbar{
+    background-color: #9F9F9F;
+}  
+.navbar .container .navbar-brand h1{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
