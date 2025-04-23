@@ -83,33 +83,43 @@
         </nav>
       </aside>
 
-
 <!-- INPUT DO USUÁRIO -->
-<div style="margin-left: 25%">
-    <form action="">
+  <div class="input-form">
+
+    
+   <div style="margin-left: 22%">
+    <form>
+
+      <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
         <!-- name do user -->
-        <label for="NameUser">NOME DO USUÁRIO</label>
-        <input type="text" id="NameUser" name="NameUser"><br>
-
+        <label for="NameUser">NOME DO USUÁRIO:</label>
+        
+        <input type="text" id="NameUser" name="NameUser"  aria-describedby="emailHelp" placeholder="João Silva"><br>
+        
         <!-- email do user -->
-        <label for="email">E-MAIL</label>
-        <input type="email" id="EmailUser" name="EmailUser"><br>
+        <label for="email">E-MAIL:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@gmail.com"><br>
 
-        <label for="Name">CONFIRME O E-MAIL</label>
-        <input type="number" id="NumberLab" name="NumberLab">
+        <label for="ConfEmail">CONFIRME O E-MAIL:</label>
+        <input type="email" id="ConfEmail" name="ConfEmail" placeholder="exemplo@gmail.com"><br>
 
-        <label for="NumberLab">SENHA</label>
-        <input type="number" id="NumberLab" name="NumberLab">
+        <label for="Senha">SENHA:</label>
+        <input type="password" id="Senha" name="Senha" placeholder="senha123">
 
-        <button>
+      <div class="input-botao">
+        <button type="button" class="btn btn-success">
             SALVAR
         </button>
-        <button>
+
+        <button type="button" class="btn btn-secondary">
             CANCELAR
         </button>
-
+        
+      </div>
+      </div>
 
     </form>
+  </div>
 </div>
 </body>
 </html>
