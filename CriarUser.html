@@ -10,10 +10,17 @@
 
     <script src="https://kit.fontawesome.com/2b86e70d4e.js" crossorigin="anonymous"></script>
     <script src="validaForm.js"></script>
+</head>
+
 <body>
 
     <!-- Nav bar do criar usuário -->
     <nav class="navbar"> 
+    <!-- Botão de abrir o menu (aparece só em telas pequenas) -->
+    <button class="btn btn-dark d-lg-none m-3" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  
       <div class="container">
           <a class="navbar-brand col" href="#">
             <h1>CRIAR USUÁRIO</h1>
@@ -25,7 +32,11 @@
 
       <!-- side bar -->
       <aside>
-        <nav class="sidebar">
+        <nav class="sidebar" id="sidebar">
+          <!-- Botão de fechar o menu (aparece só em telas pequenas) -->
+          <button id="closeSidebar" class="btn btn-light d-lg-none align-self-end m-3">
+            <i class="fas fa-times"></i>
+          </button>
           <button class="sidebar-button-user">
             <span>
               <i class="fa-solid fa-house"></i>
@@ -86,45 +97,61 @@
       </aside>
 
 <!-- INPUT DO USUÁRIO -->
-  <div class="input-form">
-   <div style="margin-left: 22%">
-    <form>
-
-      <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
-        <!-- name do user -->
-        <label for="NameUser">NOME DO USUÁRIO:</label>
-        <input type="text" id="NameUser" name="NameUser"  aria-describedby="emailHelp" placeholder="João Silva"><br>
-        
-        <!-- email do user -->
-        <label for="email">E-MAIL:</label>
-        <input type="email" id="email" name="email" placeholder="exemplo@gmail.com"><br>
-
-        <label for="ConfEmail">CONFIRME O E-MAIL:</label>
-        <input type="email" id="ConfEmail" name="ConfEmail" placeholder="exemplo@gmail.com"><br>
-
-        <label for="Senha">SENHA:</label>
-        <input type="password" id="Senha" name="Senha" placeholder="senha123">
-
-      <div class="input-botao">
-        <button type="button" class="btn btn-success" onclick="ValidaForm()">
-            SALVAR
-        </button>
-
-        <button type="button" class="btn btn-secondary">
-            CANCELAR
-        </button>
-      
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-12">
+      <div class="shadow p-5 mb-5 bg-body-tertiary rounded">
+        <form>
+          <!-- name do user -->
+          <label for="NameUser">NOME DO USUÁRIO:</label>
+          <input type="text" class="form-control mb-3" id="NameUser" name="NameUser" placeholder="João Silva">
+          <p id="alertName" style="color: red;"></p>
+          <!-- email do user -->
+          <label for="email">E-MAIL:</label>
+          <input type="email" class="form-control mb-3" id="email" name="email" placeholder="exemplo@gmail.com">
+          <p id="alertEmail" style="color: red;"></p>
+          <!-- confirmando o email -->
+          <label for="ConfEmail">CONFIRME O E-MAIL:</label>
+          <input type="email" class="form-control mb-3" id="ConfEmail" name="ConfEmail" placeholder="exemplo@gmail.com">
+          <p id="alertConfEmail" style="color: red;"></p>
+          <!-- senha do user -->
+          <label for="Senha">SENHA:</label>
+          <input type="password" class="form-control mb-4" id="Senha" name="Senha" placeholder="senha123">
+          <p id="alertPassword" style="color: red;"></p>
+          <p id="alertEmpty" style="color: red;"></p>
+          <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-success" onclick="ValidaForm()">SALVAR</button>
+            <button type="button" class="btn btn-secondary">CANCELAR</button>
+          </div>
+        </form>
       </div>
-      </div>
-
-    </form>
+    </div>
   </div>
 </div>
 
+<script>
+  //abrindo a side bar clicando no icone
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('active');
+});
 
+const closeBtn = document.getElementById('closeSidebar');
+const sidebar = document.getElementById('sidebar');
 
+//fehcando a sidebar clicando no X
+closeBtn.addEventListener('click', function() {
+    sidebar.classList.remove('active');
+});
 
-
+//fechando a sidebar caso clique fora dela
+document.addEventListener('click', function(event) {
+    const isClickInsideSidebar = sidebar.contains(event.target);
+    const isClickInsideMenuButton = document.getElementById('menu-toggle').contains(event.target);
+    if (!isClickInsideSidebar && !isClickInsideMenuButton) {
+        sidebar.classList.remove('active');
+    }
+});
+</script>
 </body>
 
 </html>
