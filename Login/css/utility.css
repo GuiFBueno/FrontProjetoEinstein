@@ -1,0 +1,16 @@
+.text-2xl{
+  font: var(--h1);
+}
+
+.text-label-login{
+  font: var(--label-login);
+}
+
+.text-input-login{
+  font: var(--input-login);
+}
+
+.text-btn-login{
+  font: var(--text-btn-login);
+  color: white;
+}
