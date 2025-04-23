@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <script src="https://kit.fontawesome.com/2b86e70d4e.js" crossorigin="anonymous"></script>
+    <script src="validaForm.js"></script>
 <body>
 
     <!-- Nav bar do criar usuário -->
@@ -28,7 +29,8 @@
           <button class="sidebar-button-user">
             <span>
               <i class="fa-solid fa-house"></i>
-                  <span>Home</span>  
+                  <span>Home</span> 
+                   
             </span>
 
           <button class="sidebar-button-user">
@@ -85,15 +87,12 @@
 
 <!-- INPUT DO USUÁRIO -->
   <div class="input-form">
-
-    
    <div style="margin-left: 22%">
     <form>
 
       <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
         <!-- name do user -->
         <label for="NameUser">NOME DO USUÁRIO:</label>
-        
         <input type="text" id="NameUser" name="NameUser"  aria-describedby="emailHelp" placeholder="João Silva"><br>
         
         <!-- email do user -->
@@ -107,19 +106,25 @@
         <input type="password" id="Senha" name="Senha" placeholder="senha123">
 
       <div class="input-botao">
-        <button type="button" class="btn btn-success">
+        <button type="button" class="btn btn-success" onclick="ValidaForm()">
             SALVAR
         </button>
 
         <button type="button" class="btn btn-secondary">
             CANCELAR
         </button>
-        
+      
       </div>
       </div>
 
     </form>
   </div>
 </div>
+
+
+
+
+
 </body>
+
 </html>
