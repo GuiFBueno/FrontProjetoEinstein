@@ -97,33 +97,35 @@
       </aside>
 
 <!-- INPUT DO USUÁRIO -->
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-12">
-      <div class="shadow p-5 mb-5 bg-body-tertiary rounded">
-        <form>
-          <!-- name do user -->
-          <label for="NameUser">NOME DO USUÁRIO:</label>
-          <input type="text" class="form-control mb-3" id="NameUser" name="NameUser" placeholder="João Silva">
-          <p id="alertName" style="color: red;"></p>
-          <!-- email do user -->
-          <label for="email">E-MAIL:</label>
-          <input type="email" class="form-control mb-3" id="email" name="email" placeholder="exemplo@gmail.com">
-          <p id="alertEmail" style="color: red;"></p>
-          <!-- confirmando o email -->
-          <label for="ConfEmail">CONFIRME O E-MAIL:</label>
-          <input type="email" class="form-control mb-3" id="ConfEmail" name="ConfEmail" placeholder="exemplo@gmail.com">
-          <p id="alertConfEmail" style="color: red;"></p>
-          <!-- senha do user -->
-          <label for="Senha">SENHA:</label>
-          <input type="password" class="form-control mb-4" id="Senha" name="Senha" placeholder="senha123">
-          <p id="alertPassword" style="color: red;"></p>
-          <p id="alertEmpty" style="color: red;"></p>
-          <div class="d-flex justify-content-between">
-            <button type="button" class="btn btn-success" onclick="ValidaForm()">SALVAR</button>
-            <button type="button" class="btn btn-secondary">CANCELAR</button>
-          </div>
-        </form>
+<div class="main-content">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="shadow p-5 mb-5 bg-body-tertiary rounded">
+          <form>
+            <!-- name do user -->
+            <label for="NameUser">NOME DO USUÁRIO:</label>
+            <input type="text" class="form-control mb-3" id="NameUser" name="NameUser" placeholder="João Silva">
+            <p id="alertName" style="color: red;"></p>
+            <!-- email do user -->
+            <label for="email">E-MAIL:</label>
+            <input type="email" class="form-control mb-3" id="email" name="email" placeholder="exemplo@gmail.com">
+            <p id="alertEmail" style="color: red;"></p>
+            <!-- confirmando o email -->
+            <label for="ConfEmail">CONFIRME O E-MAIL:</label>
+            <input type="email" class="form-control mb-3" id="ConfEmail" name="ConfEmail" placeholder="exemplo@gmail.com">
+            <p id="alertConfEmail" style="color: red;"></p>
+            <!-- senha do user -->
+            <label for="Senha">SENHA:</label>
+            <input type="password" class="form-control mb-4" id="Senha" name="Senha" placeholder="senha123">
+            <p id="alertPassword" style="color: red;"></p>
+            <p id="alertEmpty" style="color: red;"></p>
+            <div class="d-flex justify-content-between">
+              <button type="button" class="btn btn-success" onclick="ValidaForm()">SALVAR</button>
+              <button type="button" class="btn btn-secondary">CANCELAR</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
