@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CriarUsuário</title>
+    <title>Regras</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <script src="https://kit.fontawesome.com/2b86e70d4e.js" crossorigin="anonymous"></script>
     <script src="validaForm.js"></script>
-
 </head>
 
-<body>
 
+<body>
+  <header class="conteiner">
     <!-- Nav bar do criar usuário -->
     <nav class="navbar"> 
     <!-- Botão de abrir o menu (aparece só em telas pequenas) -->
@@ -24,11 +24,12 @@
   
       <div class="container">
           <a class="navbar-brand col" href="#">
-            <h1>CRIAR USUÁRIO</h1>
+            <h1>ADICIONAR REGRAS</h1>
           </a>
           <div class="linha-abaixo"></div>
       </div>
       </nav>
+  </header>
 
 
       <!-- side bar -->
@@ -45,14 +46,14 @@
                    
             </span>
 
-          <button class="sidebar-button-user">
+          <button class="sidebar-button-user" onclick="window.location.href='CriarUser.html'">
                 <span>
                     <i class="fa-regular fa-user"></i>
                       <span>Criar Usuário</span>  
                 </span>
           </button> 
 
-          <button class="sidebar-button-regras" onclick="window.location.href='REGRAS.HTML'">
+          <button class="sidebar-button-regras">
             <span>
               <i class="fa-regular fa-pen-to-square"></i>
                   <span>Regras</span>  
@@ -87,63 +88,37 @@
         </span>
        </button>
 
-       <a href="Login/css/Login.html">
-       <button class="sidebar-button">
+       <button class="sidebar-button" onclick="window.location.href='Login'">
         <span>
           <i class="fa-solid fa-right-from-bracket"></i>
               <span>Sair</span>  
         </span>
        </button>
-      </a>
-      
+
         </nav>
       </aside>
 
+  <div class="main-content">
 <!-- INPUT DO USUÁRIO -->
-<div class="main-content">
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-12">
-        <div class="shadow p-5 mb-5 bg-body-tertiary rounded">
-          <form>
-            <!-- name do user -->
-            <label for="NameUser">NOME DO USUÁRIO:</label>
-            <input type="text" class="form-control mb-3" id="NameUser" name="NameUser" placeholder="Josh Smith">
-            <p id="alertName" style="color: red;"></p>
-            <!-- email do user -->
-            <label for="email">E-MAIL:</label>
-            <input type="email" class="form-control mb-3" id="email" name="email" placeholder="exemple@gmail.com">
-            <p id="alertEmail" style="color: red;"></p>
-            <!-- confirmando o email -->
-            <label for="ConfEmail">CONFIRME O E-MAIL:</label>
-            <input type="email" class="form-control mb-3" id="ConfEmail" name="ConfEmail" placeholder="exemple@gmail.com">
-            <p id="alertConfEmail" style="color: red;"></p>
-            <!-- senha do user -->
-            <label for="Senha">SENHA:</label>
-            <input type="password" class="form-control mb-4" id="Senha" name="Senha" placeholder="Password">
-            <p id="alertPassword" style="color: red;"></p>
-            <p id="alertEmpty" style="color: red;"></p>
-
-            <label for="roles">TIPO DE REGRAS:</label><br>
-            <select name="Regras" id="roles">
-            <option value="0">ADM</option>
-            <option value="1">PROFESSOR</option>
-            <option value="2">ALUNO</option>
-          </select>
-
-            <p id="alertConfEmail" style="color: red;"></p>
-
-            <div class="d-flex justify-content-between">
-              <button type="button" class="btn btn-success" onclick="ValidaForm()">SALVAR</button>
-              <button type="button" class="btn btn-secondary">CANCELAR</button>
-            </div>
-          </form>
-        </div>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-12">
+      <div class="shadow p-5 mb-5 bg-body-tertiary rounded">
+        <form>
+          <!-- name do user -->
+          <label for="NameUser">INCLUIR REGRA:</label>
+          <input type="text" class="form-control mb-3" id="NameUser" name="NameUser" placeholder="João Silva">
+          <p id="alertName" style="color: red;"></p>
+          <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-success" onclick="ValidaForm()">SALVAR</button>
+            <button type="button" class="btn btn-secondary">CANCELAR</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
-
+</div>
 <script>
   //abrindo a side bar clicando no icone
   document.getElementById('menu-toggle').addEventListener('click', function() {
