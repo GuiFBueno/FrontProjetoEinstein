@@ -52,6 +52,14 @@ body{
     height: 60px;
 }
 
+.sidebar button:hover{
+    background-color: #515050;
+    border-radius: 30px;
+    color: white;
+    transition: 0.1s;
+
+}
+
 .input-form form {
     margin-top: 50px;
     display: flex;
