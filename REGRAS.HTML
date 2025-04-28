@@ -32,71 +32,79 @@
   </header>
 
 
-      <!-- side bar -->
-      <aside>
-        <nav class="sidebar" id="sidebar">
-          <!-- Botão de fechar o menu (aparece só em telas pequenas) -->
-          <button id="closeSidebar" class="btn btn-light d-lg-none align-self-end m-3">
-            <i class="fas fa-times"></i>
-          </button>
-          <button class="sidebar-button-user">
-            <span>
-              <i class="fa-solid fa-house"></i>
-                  <span>Home</span> 
-                   
-            </span>
+        <!-- side bar -->
+<aside>
+  <nav class="sidebar" id="sidebar">
+            <!-- Botão de fechar o menu (aparece só em telas pequenas) -->
+            <button id="closeSidebar" class="btn btn-light d-lg-none align-self-end m-3">
+              <i class="fas fa-times"></i>
+            </button>
 
-          <button class="sidebar-button-user" onclick="window.location.href='CriarUser.html'">
-                <span>
+            <button class="sidebar-button-user">
+              <span>
+                <i class="fa-solid fa-house"></i>
+                    <span>Home</span> 
+              </span>
+            </button>
+
+              <a href="indexUser.html">
+                <button class="sidebar-button-user">
+                  <span>
                     <i class="fa-regular fa-user"></i>
-                      <span>Criar Usuário</span>  
-                </span>
-          </button> 
-
-          <button class="sidebar-button-regras">
-            <span>
-              <i class="fa-regular fa-pen-to-square"></i>
-                  <span>Regras</span>  
-            </span>
-      </button>
-
-      <button class="sidebar-button-lab">
-        <span>
-          <i class="fa-solid fa-flask"></i>
-              <span>Laboratórios</span>  
-        </span>
-       </button>
-
-       <button class="sidebar-button-disciplina">
-        <span>
-          <i class="fa-solid fa-book"></i>
-              <span>Cad. Disciplina</span>  
-        </span>
-       </button>
-
-       <button class="sidebar-button-software">
-        <span>
-          <i class="fa-solid fa-laptop-code"></i>
-              <span>Cad. Software</span>  
-        </span>
-       </button>
-
-       <button class="sidebar-button-reservas">
-        <span>
-          <i class="fa-solid fa-marker"></i>
-              <span>Reservas</span>  
-        </span>
-       </button>
-
-       <button class="sidebar-button" onclick="window.location.href='Login'">
-        <span>
-          <i class="fa-solid fa-right-from-bracket"></i>
-              <span>Sair</span>  
-        </span>
-       </button>
-
-        </nav>
-      </aside>
+                    <span>Usuário</span>  
+                  </span>
+                </button> 
+              </a>
+  
+              <a href="REGRAS.HTML">
+                <button class="sidebar-button-regras">
+                  <span>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <span>Regras</span>  
+                  </span>
+                </button>
+              </a>
+  
+                <button class="sidebar-button-lab">
+                  <span>
+                    <i class="fa-solid fa-flask"></i>
+                    <span>Laboratórios</span>  
+                  </span>
+                </button>
+  
+                <button class="sidebar-button-disciplina">
+                  <span>
+                    <i class="fa-solid fa-book"></i>
+                      <span>Cad. Disciplina</span>  
+                  </span>
+                </button>
+  
+                <button class="sidebar-button-software">
+                  <span>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Cad. Software</span>  
+                  </span>
+                </button>
+  
+                <button class="sidebar-button-reservas">
+                  <span>
+                    <i class="fa-solid fa-marker"></i>
+                        <span>Reservas</span>  
+                  </span>
+                </button>
+          
+                <a href="Login/css/Login.html">
+                <button class="sidebar-button">
+                  <span>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Sair</span>  
+                  </span>
+                </button>
+                </a>
+                         
+  </nav>  
+</aside>
+  
 
   <div class="main-content">
 <!-- INPUT DO USUÁRIO -->
@@ -107,7 +115,7 @@
         <form>
           <!-- name do user -->
           <label for="NameUser">INCLUIR REGRA:</label>
-          <input type="text" class="form-control mb-3" id="NameUser" name="NameUser" placeholder="João Silva">
+          <input type="text" class="form-control mb-3" id="NameUser" name="NameUser" placeholder="">
           <p id="alertName" style="color: red;"></p>
           <div class="d-flex justify-content-between">
             <button type="button" class="btn btn-success" onclick="ValidaForm()">SALVAR</button>
