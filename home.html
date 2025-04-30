@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script src="https://kit.fontawesome.com/2b86e70d4e.js" crossorigin="anonymous"></script>
+    <script src="validaForm.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Nav bar do criar usuário -->
+    <nav class="navbar"> 
+    <!-- Botão de abrir o menu (aparece só em telas pequenas) -->
+    <button class="btn btn-dark d-lg-none m-3" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  
+      <div class="container">
+          <a class="navbar-brand col" href="#">
+            <h1>HOME</h1>
+          </a>
+          <div class="linha-abaixo"></div>
+      </div>
+      </nav>
+
+       <!-- side bar -->
+<aside>
+  <nav class="sidebar" id="sidebar">
+                  <!-- Botão de fechar o menu (aparece só em telas pequenas) -->
+                  <button id="closeSidebar" class="btn btn-light d-lg-none align-self-end m-3">
+                    <i class="fas fa-times"></i>
+                  </button>
+      
+                  <button class="sidebar-button-user">
+                    <span>
+                      <i class="fa-solid fa-house"></i>
+                          <span>Home</span> 
+                    </span>
+                  </button>
+      
+                    <a href="indexUser.html">
+                      <button class="sidebar-button-user">
+                        <span>
+                          <i class="fa-regular fa-user"></i>
+                          <span>Usuário</span>  
+                        </span>
+                      </button> 
+                    </a>
+        
+                    <a href="REGRAS.HTML">
+                      <button class="sidebar-button-regras">
+                        <span>
+                          <i class="fa-regular fa-pen-to-square"></i>
+                          <span>Regras</span>  
+                        </span>
+                      </button>
+                    </a>
+        
+                      <button class="sidebar-button-lab">
+                        <span>
+                          <i class="fa-solid fa-flask"></i>
+                          <span>Laboratórios</span>  
+                        </span>
+                      </button>
+        
+                      <button class="sidebar-button-disciplina">
+                        <span>
+                          <i class="fa-solid fa-book"></i>
+                            <span>Cad. Disciplina</span>  
+                        </span>
+                      </button>
+        
+                      <button class="sidebar-button-software">
+                        <span>
+                          <i class="fa-solid fa-laptop-code"></i>
+                          <span>Cad. Software</span>  
+                        </span>
+                      </button>
+        
+                      <button class="sidebar-button-reservas">
+                        <span>
+                          <i class="fa-solid fa-marker"></i>
+                              <span>Reservas</span>  
+                        </span>
+                      </button>
+                
+                      <a href="Login/css/Login.html">
+                      <button class="sidebar-button">
+                        <span>
+                          <i class="fa-solid fa-right-from-bracket"></i>
+                              <span>Sair</span>  
+                        </span>
+                      </button>
+                      </a>
+                               
+  </nav>  
+</aside>
+
+<!-- CARDS -->
+<div class="main-content">
+  <div class="row flex-wrap">
+    <!-- CARD 1 -->
+    <div class="col-auto card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">RESERVA 11/04 - 16/04</h4>
+          <div class="linha-abaixo" style="border-top: 2px solid white"></div>
+          <div class="d-flex justify-content-between align-items-center" style="margin: 20px;">
+            <div>
+              <div class="text-center"> <h4 class="card-title" style="font-size: xx-large;">LAB 1 - 19:00</h4></div>
+            </div>
+
+            <div class="ms-auto d-flex flex-column justify-content-center" id="remov-edit">
+              <button type="button" class="btn btn-outline-danger">
+                <i class="fa-solid fa-trash"></i> 
+                <span>REMOVER</span>
+              </button>
+              <br>
+              <button type="button" class="btn btn-outline-primary">
+                <i class="fa-solid fa-square-plus"></i> 
+                <span>EDITAR</span>
+              </button>
+            </div>
+          </div>
+          <div id="card-visu">
+            <a href="#" class="btn btn-light">
+              <i class="fa-solid fa-eye"></i>
+              <span>VISUALIZAR</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="col-auto card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">RESERVA 11/04 - 14/04</h4>
+          <div class="linha-abaixo" style="border-top: 2px solid white"></div>
+          <div class="d-flex justify-content-between align-items-center" style="margin: 20px;">
+            <div>
+              <div class="text-center"> <h4 class="card-title">LAB 2 - 19:00</h4></div>
+            </div>
+
+            <div class="ms-auto d-flex flex-column justify-content-center" id="remov-edit">
+              <button type="button" class="btn btn-outline-danger">
+                <i class="fa-solid fa-trash"></i> 
+                <span>REMOVER</span>
+              </button>
+              <br>
+              <button type="button" class="btn btn-outline-primary">
+                <i class="fa-solid fa-square-plus"></i> 
+                <span>EDITAR</span>
+              </button>
+            </div>
+          </div>
+          <div id="card-visu">
+            <a href="#" class="btn btn-light">
+              <i class="fa-solid fa-eye"></i>
+              <span>VISUALIZAR</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="col-auto card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">RESERVA 14/04 - 18/04</h4>
+          <div class="linha-abaixo" style="border-top: 2px solid white"></div>
+          <div class="d-flex justify-content-between align-items-center" style="margin: 20px;">
+            <div>
+              <div class="text-center"> <h4 class="card-title">LAB 3 - 19:00</h4></div>
+            </div>
+
+            <div class="ms-auto d-flex flex-column justify-content-center" id="remov-edit">
+              <button type="button" class="btn btn-outline-danger">
+                <i class="fa-solid fa-trash"></i> 
+                <span>REMOVER</span>
+              </button>
+              <br>
+              <button type="button" class="btn btn-outline-primary">
+                <i class="fa-solid fa-square-plus"></i> 
+                <span>EDITAR</span>
+              </button>
+            </div>
+          </div>
+          <div id="card-visu">
+            <a href="#" class="btn btn-light">
+              <i class="fa-solid fa-eye"></i>
+              <span>VISUALIZAR</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="col-auto card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">RESERVA 11/04 - 16/04</h4>
+          <div class="linha-abaixo" style="border-top: 2px solid white"></div>
+          <div class="d-flex justify-content-between align-items-center" style="margin: 20px;">
+            <div>
+              <div class="text-center"> <h4 class="card-title" style="font-size: xx-large;">LAB 1 - 19:00</h4></div>
+            </div>
+
+            <div class="ms-auto d-flex flex-column justify-content-center" id="remov-edit">
+              <button type="button" class="btn btn-outline-danger">
+                <i class="fa-solid fa-trash"></i> 
+                <span>REMOVER</span>
+              </button>
+              <br>
+              <button type="button" class="btn btn-outline-primary">
+                <i class="fa-solid fa-square-plus"></i> 
+                <span>EDITAR</span>
+              </button>
+            </div>
+          </div>
+          <div id="card-visu">
+            <a href="#" class="btn btn-light">
+              <i class="fa-solid fa-eye"></i>
+              <span>VISUALIZAR</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 5 -->
+    <div class="col-auto card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">RESERVA 11/04 - 14/04</h4>
+          <div class="linha-abaixo" style="border-top: 2px solid white"></div>
+          <div class="d-flex justify-content-between align-items-center" style="margin: 20px;">
+            <div>
+              <div class="text-center"> <h4 class="card-title">LAB 2 - 19:00</h4></div>
+            </div>
+
+            <div class="ms-auto d-flex flex-column justify-content-center" id="remov-edit">
+              <button type="button" class="btn btn-outline-danger">
+                <i class="fa-solid fa-trash"></i> 
+                <span>REMOVER</span>
+              </button>
+              <br>
+              <button type="button" class="btn btn-outline-primary">
+                <i class="fa-solid fa-square-plus"></i> 
+                <span>EDITAR</span>
+              </button>
+            </div>
+          </div>
+          <div id="card-visu">
+            <a href="#" class="btn btn-light">
+              <i class="fa-solid fa-eye"></i>
+              <span>VISUALIZAR</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 6 -->
+    <div class="col-auto card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">RESERVA 14/04 - 18/04</h4>
+          <div class="linha-abaixo" style="border-top: 2px solid white"></div>
+          <div class="d-flex justify-content-between align-items-center" style="margin: 20px;">
+            <div>
+              <div class="text-center"> <h4 class="card-title">LAB 3 - 19:00</h4></div>
+            </div>
+
+            <div class="ms-auto d-flex flex-column justify-content-center" id="remov-edit">
+              <button type="button" class="btn btn-outline-danger">
+                <i class="fa-solid fa-trash"></i> 
+                <span>REMOVER</span>
+              </button>
+              <br>
+              <button type="button" class="btn btn-outline-primary">
+                <i class="fa-solid fa-square-plus"></i> 
+                <span>EDITAR</span>
+              </button>
+            </div>
+          </div>
+          <div id="card-visu">
+            <a href="#" class="btn btn-light">
+              <i class="fa-solid fa-eye"></i>
+              <span>VISUALIZAR</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div> 
+
+<script>
+  //abrindo a side bar clicando no icone
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('active');
+});
+
+const closeBtn = document.getElementById('closeSidebar');
+const sidebar = document.getElementById('sidebar');
+
+//fechando a sidebar clicando no X
+closeBtn.addEventListener('click', function() {
+    sidebar.classList.remove('active');
+});
+
+//fechando a sidebar caso clique fora dela
+document.addEventListener('click', function(event) {
+    const isClickInsideSidebar = sidebar.contains(event.target);
+    const isClickInsideMenuButton = document.getElementById('menu-toggle').contains(event.target);
+    if (!isClickInsideSidebar && !isClickInsideMenuButton) {
+        sidebar.classList.remove('active');
+    }
+});
+</script>
+</body>
+
+</html>
