@@ -98,7 +98,7 @@ h4.card-title{
     top: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start;;
     border-right: 1px solid black;
     width: 210px;
     min-height: 100%;
@@ -110,18 +110,27 @@ h4.card-title{
     border: 0;
     color: #B8C7CE;
     cursor: pointer;
-    padding: 0;
+    margin-left: 10px;
+    margin: 5px;
     padding: 20px 10px 30px 5px;
     font-size: 20px;
-    height: 60px;
+    height: 5px;
+}
+
+.sidebar span{
+  display: flex;
+  align-items: center;
+     gap: 10px;
+  color: #B8C7CE;
+  margin-top: -5px
 }
 
 .sidebar button:hover{
     background-color: #515050;
-    border-radius: 30px;
+    border-radius: 20px;
     color: white;
     transition: 0.1s;
-
+    height: 5px;
 }
 
 .input-form form {
@@ -181,3 +190,23 @@ table{
     border-collapse: collapse;
     
 }
+
+
+.input-checkbox{
+    height: 30px;
+    width: 30px;
+}
+
+.container-checkbox{
+    display: flex;
+}
+
+.input-checkbox:hover{
+    cursor: pointer;
+}
+
+.container-checkbox{
+  gap: 10px;
+  
+}
+
