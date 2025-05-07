@@ -8,8 +8,8 @@
     .navbar {
         margin-left: 210px; /* igual à largura da sidebar */
       }
-      .main-content .row{
-        margin-left: 150px;
+      #maincard{
+        margin-left: 185px;
     }
   }
 
@@ -210,3 +210,55 @@ table{
   
 }
 
+.bodylogin {
+    background-color: #000 !important;
+    height: 100vh;
+
+  .login-container {
+    border-radius: 15px;
+    background-color: #ddd;
+    padding: 60px;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    max-height: 600px;
+    font-size: 1.4rem;
+  }
+
+  .form-control {
+    border: none;
+    border-bottom: 3px solid black;
+    border-radius: 0;
+    background-color: transparent !important;
+  }
+
+  .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: black;
+  }
+
+  .btn-login{
+    background-color: #797979;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+
+  }
+
+  .btn-login:hover{
+    background-color: #797979;
+    color: white;
+  }
+
+  .left-image {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .login-container h1{
+    font-size: 4rem;
+  }
+}
